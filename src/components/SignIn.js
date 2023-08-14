@@ -2,8 +2,14 @@ import React from "react";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useNavigate } from "react-router-dom";
 import { faArrowLeft } from '@fortawesome/free-solid-svg-icons';
+import  '../styles/forms.css'
+
 
 const SignIn = () => {
+  const initialForm ={
+    username: "",
+    password: ""
+  }
     const navigate  = useNavigate()
     
     const handleNavigation = (path) =>{
@@ -18,10 +24,15 @@ const SignIn = () => {
 
       <main className="form-main-container">
         <label className="main-label">Username:</label><br/>
-        <input className="main-input" placeholder="Type your username"/>  
+        <input
+        
+        className="main-input" 
+        placeholder="Type your username"/>  
         <br/>
         <label className="main-label">Password:</label><br/>
-        <input className="main-input" placeholder="Type your password"/>
+        <input 
+        className="main-input" 
+        placeholder="Type your password"/>
       </main>
       <footer>
         <button onClick={() => handleNavigation('/dashboard')} className="sign-up form-btn">Sign In</button>
