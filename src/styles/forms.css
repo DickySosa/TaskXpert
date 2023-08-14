@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+/*header style start*/
+.register-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.forms-header-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+}
+
+.back-icon {
+    font-size: 24px;
+    cursor: pointer;
+    color: #00A4CC;
+    /* Añadido para separar el icono del título */
+}
+
+.form-title {
+    font-size: 24px;
+    margin: 0;
+    flex-grow: 1;
+    /* Permite que el título ocupe todo el espacio disponible */
+    text-align: center;
+    /* Centra el título horizontalmente */
+    margin-right: 20px;
+    font-family: 'Lobster', cursive;
+    color: #150050;
+}
+
+/*header style end*/
+
+/*Main style start*/
+.main-label {
+    display: flex;
+    margin-bottom: -1rem;
+}
+
+.main-input {
+    height: 25px;
+    border-radius: 5px;
+    border: 0.25px solid black;
+    margin-bottom: 1rem;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.form-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    min-width: 50%;
+    max-width: 100%;
+    height: 40px;
+    font-family: 'Lobster', cursive;
+    font-size: 20px;
+    border: solid black 1px;
+    border-radius: 5px;
+    margin-top: 1rem;
+}
+
+/*Main style end*/

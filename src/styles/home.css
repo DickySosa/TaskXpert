@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+
+body {
+    background-color: #EDEDED;
+    min-width: 275px;
+}
+
+/*****Header style start*****/
+.header-container {
+    display: flex;
+    margin-bottom: 3rem;
+}
+
+.logo {
+    display: flex;
+    width: 90%;
+    border-radius: 10px;
+}
+
+.header-container .logo img {
+    border-radius: 10px;
+    max-width: 40%;
+    min-width: 100px;
+}
+
+.btn-container {
+    display: flex;
+    gap: 5px;
+    padding: 15px;
+    width: 50%;
+}
+
+.register {
+    color: #FB2576;
+    background-color: #3F0071;
+}
+
+.register:hover {
+    background-color: #6202b0;
+}
+
+.sign-up {
+    color: #3F0071;
+    background-color: #FB2576;
+}
+
+.sign-up:hover {
+    background-color: #e00157;
+}
+
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    cursor: pointer;
+    min-width: 50%;
+    max-width: 100%;
+    height: 40px;
+    font-family: 'Lobster', cursive;
+    border: solid black 1px;
+    border-radius: 5px;
+}
+
+/*****Header style ends*****/
+
+/*****Main style start*****/
+.message, .welcome-message, .list-container{
+    margin-bottom: 3rem;
+}
+.list-container {
+    list-style: none;
+    text-align: left;
+}
+.blue-style{
+    color:  #00A4CC;
+}
+.pink-style{
+    color: #FB2576;
+}
+
+/*****Main style ends*****/

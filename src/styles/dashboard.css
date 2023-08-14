@@ -1,0 +1,132 @@
+/*Header style start*/
+.header-container-dash {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100vh;
+    width: 100%;
+}
+
+.logo-dash {
+    display: flex;
+    width: 100%;
+    border-radius: 10px;
+    justify-content: left;
+}
+
+.header-container-dash .logo-dash img {
+    border-radius: 10px;
+    max-width: 40%;
+    min-width: 100px;
+}
+
+.btn-container-dash {
+    display: flex;
+    justify-content: right;
+}
+
+.register-dash {
+    color: #FB2576;
+    background-color: #3F0071;
+}
+
+.register-dash:hover {
+    background-color: #6202b0;
+}
+
+.btn-dash {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    min-width: 50%;
+    max-width: 100%;
+    height: 40px;
+    font-family: 'Lobster', cursive;
+    border: solid black 1px;
+    border-radius: 5px;
+}
+
+/*Header style ends*/
+
+/*Section style start*/
+.dashboard-task-inputs {
+    display: grid;
+    grid-template-columns: 1.25fr 0.5fr 1.25fr 1.25fr;
+    grid-template-areas:
+        'task-name due-date assigned-to add-button'
+        'description description description description'
+    ;
+    gap: 10px;
+    width: 100%;
+    margin-bottom: 2rem;
+}
+
+.task-name {
+    grid-area: task-name;
+    min-width: 100px;
+}
+
+.due-date {
+    grid-area: due-date;
+    min-width: 100px;
+}
+
+.assigned-to {
+    grid-area: assigned-to;
+    min-width: 100px;
+}
+
+.description {
+    grid-area: description;
+}
+
+.add-button {
+    grid-area: add-button;
+    color: #150050;
+    background-color: #00A4CC;
+    border-radius: 5px;
+    height: 33px;
+}
+.task-input {
+    height: 30px;
+    border-radius: 5px;
+    border: 0.25px solid black;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+/*Section style ends*/
+
+/*Main style start*/
+.task-info{
+    width: 100%;
+}
+.table-info{
+    width: 100%;
+}
+thead{
+    width: 100%;
+}
+th{
+    border: 1px solid black;
+    width: 10%;
+}
+td{
+    border: 1px solid black;
+}
+/*option buttons start*/
+.edit-btn, .dlt-btn, .done-btn{
+    color: black;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+.edit-btn{
+    background-color: #3a87f3;  
+}
+.dlt-btn{
+    background-color: rgb(255, 3, 3);
+}
+.done-btn{
+    background-color: rgba(46, 204, 113, 1);
+}
+/*option buttons ends*/
+/*Main style end*/
