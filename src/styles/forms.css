@@ -37,16 +37,20 @@
 /*header style end*/
 
 /*Main style start*/
+.form-main-container{
+    max-width: 150px;
+}
 .main-label {
     display: flex;
     margin-bottom: -1rem;
+    margin-top: 1rem;
 }
 
 .main-input {
     height: 25px;
     border-radius: 5px;
     border: 0.25px solid black;
-    margin-bottom: 1rem;
+    /* margin-bottom: 1rem; */
     background-color: rgba(0, 0, 0, 0);
 }
 
@@ -65,4 +69,12 @@
     margin-top: 1rem;
 }
 
+/*span styles*/
+span{
+    display: flex;
+    color: red;
+    font-size: 10px;
+    text-align: left;
+    width: 100%;
+}
 /*Main style end*/

@@ -5,11 +5,12 @@ const regexPassword = /^(?=.*\d)(?=.*[\u0021-\u002b\u003c-\u0040])(?=.*[A-Z])(?=
 export const formValidation = ({username, email, password, confirmPassword}) =>{
 
     let errors = {};
-    if(username | username === ''){
+
+    if(username || username === ''){
         if(!username.trim()){
             errors.username = "Username is required"
         } else if(username.length < 6){
-            errors.username = " The username should have at least 6 characters"
+            errors.username = "Minimun 6 characters"
         } else if (!regexUsername.test(username.trim())){
             errors.username = " Just accept letters and blank spaces"
         }
@@ -25,10 +26,10 @@ export const formValidation = ({username, email, password, confirmPassword}) =>{
         if (!password.trim()) {
             errors.password = "'Password' is required";
           } else if (password.length < 8) {
-            errors.password = 'The password should have at least 8 characters';
+            errors.password = 'Should have minimun 8 characters';
           } else if (!regexPassword.test(password.trim())) {
             errors.password =
-              'Password should have lower, upper case, numbers and special characters';
+              'Should have lower,upper case, numbers and special characters';
           } else if (password > 16) {
             errors.username = 'Password is no more than 16 characters long';
           }
