@@ -5,8 +5,9 @@ const useRegister = (initialForm, formValidation) => {
 
     const [form,setForm] = useState(initialForm)
     const [errors,setErrors] = useState({})
-    const [loading, setLoading] = useState(false)
+    const [loading, setLoading] = useState(true)
     const [serverError, setServerError] = useState(null)
+    const [response, setResponse] = useState(true)
 
 
   
@@ -31,7 +32,9 @@ const useRegister = (initialForm, formValidation) => {
     const handleSubmit = async (e) =>{
       e.preventDefault()
       console.log(form)
-      if(Object.keys(errors.length > 0)){
+      setResponse(true)
+      setServerError('Prueba de que si sirve')
+      if(Object.keys(errors).length > 0){
         return
       }
 
@@ -51,7 +54,7 @@ const useRegister = (initialForm, formValidation) => {
         }
         const data = await fetchRequest.json
         setLoading(false)
-
+        
         if(!data.registerErrors){
             console.log('user saved successfully')
             handleNavigation('/dashboard')
@@ -69,7 +72,8 @@ const useRegister = (initialForm, formValidation) => {
         serverError,
         handleBlur,
         handleSubmit,
-        handleChange
+        handleChange,
+        response
     }
 }
 export default useRegister;

@@ -5,6 +5,9 @@ import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 import "../styles/forms.css";
 import useRegister from "../hooks/useRegister";
 import { formValidation } from "../helper/validations";
+import Loader from "./Loader";
+import '../styles/loader.css'
+import Message from "./Message";
 
 const SignIn = () => {
   const initialForm = {
@@ -18,9 +21,7 @@ const SignIn = () => {
   };
 
   const handleDisabled = () => {
-    return (
-      !form.username || !form.email || !form.password || !form.confirmPassword
-    );
+    return !form.username || !form.password;
   };
 
   const {
@@ -31,6 +32,7 @@ const SignIn = () => {
     handleBlur,
     handleSubmit,
     handleChange,
+    response
   } = useRegister(initialForm, formValidation);
 
   return (
@@ -84,6 +86,8 @@ const SignIn = () => {
         >
           Sign In
         </button>
+        {loading && <Loader />}
+        {response && <Message msg={`${serverError}`} bgColor="dc3545" />}
       </footer>
     </form>
   );

@@ -46,20 +46,17 @@ const Home = () => {
           <ul className="list-container">
             <li className="list-item">
               <h3>
-                <span className="blue-style">&#10004;</span>Easy task creation
-                with just a few clicks.
+               Easy task creation with just a few clicks.
               </h3>
             </li>
             <li className="list-item">
               <h3>
-                <span className="blue-style">&#10004;</span>Effortlessly manage
-                due dates and deadlines.
+                Effortlessly manage due dates and deadlines.
               </h3>
             </li>
             <li className="list-item">
               <h3>
-                <span className="blue-style">&#10004;</span>Quickly delete
-                completed tasks for a clutter-free workspace.
+                Quickly delete completed tasks for a clutter-free workspace.
               </h3>
             </li>
           </ul>
@@ -67,19 +64,18 @@ const Home = () => {
 
         <footer className="footer-container">
           <h5>
-            Stay connected with us on{" "}
-            <span className="pink-style">Facebook</span>,{" "}
-            <span className="pink-style">Twitter</span>, and{" "}
-            <span className="pink-style">Instagram</span> for updates and tips.
+            Stay connected with us on 
+            <strong className="pink-style"> Facebook</strong>, <strong className="pink-style">Twitter</strong>, and
+            <strong className="pink-style">Instagram</strong> for updates and tips.
           </h5>
           <h5>
-            Have a question? Reach out to our support team at{" "}
-            <span className="pink-style">support@taskxpert.com</span>.
+            Have a question? Reach out to our support team at
+            <strong className="pink-style"> support@taskxpert.com</strong>.
           </h5>
           <h5>
-            <span className="pink-style">Privacy Policy</span>{" "}
-            <span className="blue-style">Terms of Use</span>{" "}
-            <span className="pink-style">About Us</span>
+            <strong className="pink-style">Privacy Policy </strong>{" "}
+            <strong className="blue-style">Terms of Use </strong>{" "}
+            <strong className="pink-style">About Us</strong>
           </h5>
         </footer>
         </div>
