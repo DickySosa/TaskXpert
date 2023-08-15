@@ -8,8 +8,6 @@ const useRegister = (initialForm, formValidation) => {
     const [loading, setLoading] = useState(true)
     const [serverError, setServerError] = useState(null)
     const [response, setResponse] = useState(true)
-
-
   
     const navigate = useNavigate()
     const handleNavigation = (path) =>{
