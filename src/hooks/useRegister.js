@@ -3,11 +3,11 @@ import { useNavigate } from 'react-router-dom';
 
 const useRegister = (initialForm, formValidation) => {
 
-    const [form,setForm] = useState(initialForm)
-    const [errors,setErrors] = useState({})
-    const [loading, setLoading] = useState(true)
-    const [serverError, setServerError] = useState(null)
-    const [response, setResponse] = useState(true)
+    const [form,setForm] = useState(initialForm);
+    const [errors,setErrors] = useState({});
+    const [loading, setLoading] = useState(true);
+    const [response, setResponse] = useState(true);
+    const [serverError, setServerError] = useState(null);
   
     const navigate = useNavigate()
     const handleNavigation = (path) =>{
@@ -29,6 +29,7 @@ const useRegister = (initialForm, formValidation) => {
 
     const handleSubmit = async (e) =>{
       e.preventDefault()
+      setErrors(formValidation(form))
       console.log(form)
       setResponse(true)
       setServerError('Prueba de que si sirve')
