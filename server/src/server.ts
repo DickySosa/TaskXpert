@@ -1,13 +1,26 @@
 import express from 'express'
 
+/*Express*/
 const app = express()
 app.use(express.json())
 
+/*Cors*/
+import  cors  from 'cors'
+app.use(cors())
+
+/*Postgres*/
+import { config } from './db-config.model'
+import {Client} from 'pg'
+
+const client = new Client (config)
 const PORT = 5000
 
-app.get('/ping', (req,res) => {
-    console.log('someone pinged')
-    res.send('pong')
+client.connect(() => {
+    try {
+        console.log('Connected to the PostgreSQL database')
+    } catch (error) {
+        console.log('Error connecting to the PostgreSQL database', error)
+    }
 })
 
 app.listen(PORT, () => {
