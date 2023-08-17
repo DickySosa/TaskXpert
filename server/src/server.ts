@@ -15,7 +15,7 @@ import {Client} from 'pg'
 const client = new Client (config)
 const PORT = 5000
 
-client.connect(() => {
+client.connect( async () => {
     try {
         console.log('Connected to the PostgreSQL database')
     } catch (error) {
