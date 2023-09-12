@@ -66,7 +66,7 @@ const Home = () => {
           <h5>
             Stay connected with us on 
             <strong className="pink-style"> Facebook</strong>, <strong className="pink-style">Twitter</strong>, and
-            <strong className="pink-style">Instagram</strong> for updates and tips.
+            <strong className="pink-style"> Instagram</strong> for updates and tips.
           </h5>
           <h5>
             Have a question? Reach out to our support team at
